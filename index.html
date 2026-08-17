@@ -269,8 +269,60 @@ li{margin:7px 0}
   .section{padding:32px 0}
   .case,.role,.project{break-inside:avoid}
 }
-</style>
+.project a strong::after{content:'  ↗';}\n
+/* FOOTER CONTACT ICONS */
+.footer-links .contact-link{
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+.contact-icon{
+  width:34px;
+  height:34px;
+  border:1px solid rgba(255,255,255,.14);
+  border-radius:10px;
+  display:grid;
+  place-items:center;
+  flex:0 0 34px;
+  background:rgba(255,255,255,.05);
+}
+.contact-icon svg{
+  width:17px;
+  height:17px;
+  display:block;
+}
+.contact-link:hover .contact-icon{
+  background:rgba(255,255,255,.1);
+  border-color:rgba(255,255,255,.25);
+}
 
+
+/* INLINE FOOTER CONTACT LINKS */
+.footer-links{
+  flex-direction:row !important;
+  flex-wrap:wrap;
+  align-items:center;
+  gap:14px 24px;
+}
+.footer-links .contact-link{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+}
+.footer-links .contact-link .contact-icon{
+  width:32px;
+  height:32px;
+  flex:0 0 32px;
+}
+@media(max-width:760px){
+  .footer-links{
+    flex-direction:column !important;
+    align-items:flex-start;
+    gap:12px;
+  }
+}
+
+</style>
 </head>
 <body id="top">
 
@@ -374,7 +426,7 @@ li{margin:7px 0}
 <section class="section" id="work" style="padding-top:0">
 <div class="wrap">
 <h2>Selected Work</h2>
-<p class="lead">A selection of enterprise product and UI/UX work samples. Click <strong>View Case Study</strong> to open the corresponding PDF in a new browser tab.</p>
+<p class="lead">A selection of enterprise product and UI/UX work samples. Click <strong>View Case Study</strong> to explore the corresponding work in my Figma portfolio.</p>
 
 <div class="grid">
   <div class="project">
@@ -382,7 +434,7 @@ li{margin:7px 0}
     <h3>RTI — Purchase Request Workflow</h3>
     <p>Operational workflow covering vehicle information, offer and negotiation details, owner communication, payment information and recent activity.</p>
     <div class="tags" style="margin-top:14px"><span class="tag">Workflow UX</span><span class="tag">Forms</span><span class="tag">Operational UI</span></div>
-    <p style="margin-top:16px"><a href="case-studies/RTI.pdf" target="_blank" rel="noopener noreferrer"><strong>View Case Study ↗</strong></a></p>
+    <p style="margin-top:16px"><a href="https://www.figma.com/design/KloKlKBW4tS7lsKi3xObAI/Works?node-id=16922-60827&t=hqaQa1kYeV5AZ7fG-1" target="_blank" rel="noopener noreferrer"><strong>View Case Study ↗</strong></a></p>
   </div>
 
   <div class="project">
@@ -390,7 +442,7 @@ li{margin:7px 0}
     <h3>MiCOM Review</h3>
     <p>Dashboard experience for departments, teams, agents, conversation volumes, sentiment analysis, scores and performance trends.</p>
     <div class="tags" style="margin-top:14px"><span class="tag">Dashboard</span><span class="tag">Data Visualization</span><span class="tag">Analytics</span></div>
-    <p style="margin-top:16px"><a href="case-studies/MiCom-Review.pdf" target="_blank" rel="noopener noreferrer"><strong>View Case Study ↗</strong></a></p>
+    <p style="margin-top:16px"><a href="https://www.figma.com/design/KloKlKBW4tS7lsKi3xObAI/Works?node-id=16922-60827&t=hqaQa1kYeV5AZ7fG-1" target="_blank" rel="noopener noreferrer"><strong>View Case Study ↗</strong></a></p>
   </div>
 
   <div class="project">
@@ -398,7 +450,7 @@ li{margin:7px 0}
     <h3>MiPhone Queues</h3>
     <p>Queue management experience covering Calls, Chat, Text and WhatsApp, with waiting metrics, agent activity, skills, availability and channel performance.</p>
     <div class="tags" style="margin-top:14px"><span class="tag">Contact Center</span><span class="tag">Real-time UI</span><span class="tag">Data Grid</span></div>
-    <p style="margin-top:16px"><a href="case-studies/MiPhone-Queues.pdf" target="_blank" rel="noopener noreferrer"><strong>View Case Study ↗</strong></a></p>
+    <p style="margin-top:16px"><a href="https://www.figma.com/design/KloKlKBW4tS7lsKi3xObAI/Works?node-id=16922-60827&t=hqaQa1kYeV5AZ7fG-1" target="_blank" rel="noopener noreferrer"><strong>View Case Study ↗</strong></a></p>
   </div>
 
   <div class="project">
@@ -406,7 +458,7 @@ li{margin:7px 0}
     <h3>MiPhone Queues — New</h3>
     <p>Updated call-center dashboard with inbound/outbound metrics, queue states, agent metrics, worker activity and skills/status views.</p>
     <div class="tags" style="margin-top:14px"><span class="tag">Dashboard</span><span class="tag">Metrics</span><span class="tag">Responsive UI</span></div>
-    <p style="margin-top:16px"><a href="case-studies/MiPhone-Queues-New.pdf" target="_blank" rel="noopener noreferrer"><strong>View Case Study ↗</strong></a></p>
+    <p style="margin-top:16px"><a href="https://www.figma.com/design/KloKlKBW4tS7lsKi3xObAI/Works?node-id=16922-60827&t=hqaQa1kYeV5AZ7fG-1" target="_blank" rel="noopener noreferrer"><strong>View Case Study ↗</strong></a></p>
   </div>
 
   <div class="project">
@@ -414,7 +466,7 @@ li{margin:7px 0}
     <h3>MiTicket</h3>
     <p>Ticket management experience covering ticket lists, categories, assignments, priorities, status, conversations, ticket logs and resolution workflows.</p>
     <div class="tags" style="margin-top:14px"><span class="tag">Service UX</span><span class="tag">Data Grid</span><span class="tag">Workflow</span></div>
-    <p style="margin-top:16px"><a href="case-studies/MiTicket.pdf" target="_blank" rel="noopener noreferrer"><strong>View Case Study ↗</strong></a></p>
+    <p style="margin-top:16px"><a href="https://www.figma.com/design/KloKlKBW4tS7lsKi3xObAI/Works?node-id=16922-60827&t=hqaQa1kYeV5AZ7fG-1" target="_blank" rel="noopener noreferrer"><strong>View Case Study ↗</strong></a></p>
   </div>
 
   <div class="project">
@@ -422,7 +474,7 @@ li{margin:7px 0}
     <h3>MiTime</h3>
     <p>Employee and manager time-management experience with monthly reports, project allocation, approval states, weekly hours and administrative activities.</p>
     <div class="tags" style="margin-top:14px"><span class="tag">Enterprise UX</span><span class="tag">Reporting</span><span class="tag">Manager UX</span></div>
-    <p style="margin-top:16px"><a href="case-studies/MiTime.pdf" target="_blank" rel="noopener noreferrer"><strong>View Case Study ↗</strong></a></p>
+    <p style="margin-top:16px"><a href="https://www.figma.com/design/KloKlKBW4tS7lsKi3xObAI/Works?node-id=16922-60827&t=hqaQa1kYeV5AZ7fG-1" target="_blank" rel="noopener noreferrer"><strong>View Case Study ↗</strong></a></p>
   </div>
 
   <div class="project">
@@ -430,7 +482,7 @@ li{margin:7px 0}
     <h3>QuickLooks</h3>
     <p>Operational dashboard presenting facility, inventory, dispatch, title, auction and exception metrics through high-density KPI views.</p>
     <div class="tags" style="margin-top:14px"><span class="tag">Dashboard</span><span class="tag">KPI Design</span><span class="tag">Information Architecture</span></div>
-    <p style="margin-top:16px"><a href="case-studies/QuickLooks.pdf" target="_blank" rel="noopener noreferrer"><strong>View Case Study ↗</strong></a></p>
+    <p style="margin-top:16px"><a href="https://www.figma.com/design/KloKlKBW4tS7lsKi3xObAI/Works?node-id=16922-60827&t=hqaQa1kYeV5AZ7fG-1" target="_blank" rel="noopener noreferrer"><strong>View Case Study ↗</strong></a></p>
   </div>
 </div>
 </div>
@@ -482,9 +534,34 @@ li{margin:7px 0}
         <a class="btn btn-primary" href="mailto:mahesh.b.design@gmail.com">Email Me</a>
       </div>
       <div class="footer-links">
-        <a href="mailto:mahesh.b.design@gmail.com">mahesh.b.design@gmail.com</a>
-        <a href="tel:+919666298963">+91 96662 98963</a>
-        <a href="https://www.linkedin.com/in/mahesh-bandi-b6521017b" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+        <a class="contact-link" href="mailto:mahesh.b.design@gmail.com" aria-label="Email Mahesh Bandi">
+          <span class="contact-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="5" width="18" height="14" rx="2"></rect>
+              <path d="m3 7 9 6 9-6"></path>
+            </svg>
+          </span>
+          <span>mahesh.b.design@gmail.com</span>
+        </a>
+
+        <a class="contact-link" href="tel:+919666298963" aria-label="Call Mahesh Bandi">
+          <span class="contact-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.33 1.78.62 2.63a2 2 0 0 1-.45 2.11L8 9.73a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.85.29 1.73.5 2.63.62A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+          </span>
+          <span>+91 96662 98963</span>
+        </a>
+
+        <a class="contact-link" href="https://www.linkedin.com/in/mahesh-bandi-b6521017b" target="_blank" rel="noopener noreferrer" aria-label="Open Mahesh Bandi on LinkedIn">
+          <span class="contact-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M6.5 8.5A1.75 1.75 0 1 0 6.5 5a1.75 1.75 0 0 0 0 3.5ZM5 10h3v9H5v-9Zm5 0h2.88v1.23h.04c.4-.75 1.38-1.54 2.84-1.54C18.8 9.69 20 11.04 20 13.84V19h-3v-4.57c0-1.09-.02-2.49-1.52-2.49-1.52 0-1.75 1.19-1.75 2.41V19h-3v-9Z"></path>
+            </svg>
+          </span>
+          <span>LinkedIn ↗</span>
+        </a>
+
         <a href="#top">Back to top ↑</a>
       </div>
     </div>
